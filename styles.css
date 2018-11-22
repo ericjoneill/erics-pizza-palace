@@ -116,6 +116,12 @@ h2{
 
 /*RESTAURANT INFO*/
 
+@media only screen and (max-width: 400px) {
+  .col-md-12 h2{
+    font-size: 2.0em;
+  }
+}
+
 .general-info{
   font-size: 20px;
   margin-top: 30px;
