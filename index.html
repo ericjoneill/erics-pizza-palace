@@ -1,251 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126572629-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-<!--   <meta name="description" content="Eric's Pizza Palace is a Pizzeria"> -->
+        gtag('config', 'UA-126572629-1');
+        </script>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-   integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-   integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="icon" href="img/head-icon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Eric O'Neill</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+            <link rel="shortcut icon" href="images/e.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+            crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-  <title>Eric's Pizza Palace</title>
-</head>
-<body>
-  <header id="home">
-    <nav>
-      <div class="row">
-        <div class="col-md-8 offset-md-2 nav-div">
-          <a class="mobile-nav-icon"><i id="mobile" class="fas fa-bars"></i></a>
-          <ul class="nav">
-            <li class="active"><a href="#home" class="scroll">Home</a></li>
-            <li><a href="#about" class="scroll">About</a></li>
-            <li><a href="#menu" class="scroll">Menu</a></li>
-            <li><a href="#contact" class="scroll">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="general-info">
-      <p>Call (267)-455-5383 to place an order<br>2600 Boardwalk, Wildwood, NJ 08260</p>
-    </div>
-    <div class="restaurant-name">
-      <h1>Eric's Pizza Palace</h1>
-    </div>
-  </header>
-
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="row description-row">
-        <div class="col-md-12">
-          <h2>"Where else but Eric's?"</h2>
-          <p>Since Eric's doors opened in 2007, Eric's Pizza Palace has prided itself in providing quality slices and exceptional service by their team of chefs who identify together as a family. One of the proudest achievements of Eric's Pizza Palace was being featured on Chef Gordon Ramsey's Kitchen Nightmares during its final season.
-With a wide variety of pizza toppings even for the pickiest of eaters, Eric's Pizza Palace is sure to sate anyone's hunger. Come visit your favorite pizza shop's favorite pizza shop today.</p>
-        </div>
-      </div>
-      <div class="row info-row" alt = "directions">
-        <div class="info-location col col-md-10">
-          <h3>Location</h3>
-          <p>Located off of Ocean and E Poplar Ave on the Wildwood boardwalk</p>
-          <div id="map"></div>
-        </div>
-        <div class="info-hours col col-md-2">
-          <div class="wrapper">
-          <h3>Hours</h3>
-          <p>M-Th: 11am-10pm</p>
-          <p>Fri-Sat: 11am-12am</p>
-          <p>Sun: 11am-9pm</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="menu-section" id="menu">
-    <div class="container">
-      <div class="row">
-        <div class="menu-div">
-          <h2>Menu</h2>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 pizza-div">
-          <h3 class="pizza-title" alt="pizza menu">Pizza</h3>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Classic Cheese</h4>
-          <p>Red sauce. Mozzarella. Pecorino.<br>
-          12</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Marinara</h4>
-          <p>Red Sauce. Oregano. Garlic. Basil.<br>
-          12</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Bianca</h4>
-          <p>White sauce. Mozzarella. Garlic.<br>
-          12</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Fennel</h4>
-          <p>Sausage. Fennel.<br>
-          13</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>N'duja</h4>
-          <p>N'duja (Calabrian sausage).<br>
-          13</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>The Greek</h4>
-          <p>Spinach. Feta.<br>
-          14</p>
-        </div>
-        <div class="col-md-12 topping-div">
-          <h4>Create Your Own Pizza</h4>
-          <p>
-           Toppings include Bananas Peppers, Mushrooms, Green Olives, Pineapple, Anchovies and more</p>
-        </div>
-
-        <div class="col-md-12 sides-div">
-          <h3 class="sides-title">Sides</h3>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Truffle Fries</h4>
-          <p>Parm. Truffle Aioli.<br>
-          8</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Stone Fruit</h4>
-          <p>Seasonal Fruit. Radicchio. Burrata.<br>
-          12</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Ernie's Wings</h4>
-          <p>Scallions. Buttermilk Ranch.<br>
-          11</p>
-        </div>
-        <div class="col-md-6 item-div">
-          <h4>Crispy Brussels</h4>
-          <p>Balsamic. Bacon.<br>
-          10</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 contact-header">
-          <h2>Contact Us</h2>
-        </div>
-        <div class="col-md-8 offset-md-2">
-          <p class="contact-paragraph">Have a question or concern? We'd love to hear from you. Send us a message and
-            we'll respond as soon as possible.
-          </p>
-        </div>
-      </div>
-      <form>
-        <div class="form-row">
-          <div class="col-md-4 offset-md-2">
-            <label>First Name</label>
-            <input id="first-name" type="text" class="first-name form-control" placeholder="First Name">
-          </div>
-          <div class="col-md-4">
-            <label>Last Name</label>
-            <input type="text" id="last-name" class="last-name form-control" placeholder="Last Name">
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <label>Email</label>
-            <input id="email" type="email" class="e-mail form-control" placeholder="Email" spellcheck="false">
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <p>Please indicate your form of submission</p>
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <div class="form-check">
-              <input name="option" class="form-check-input" type="radio" checked>
-              <label>Catering</label>
+        <!--Jumbotron Section-->
+            <div class="jumbotron jumbotron-fluid" id="home">
+                <div class="container">
+                    <img class="img-fluid" src="images/profile_pic.jpg" alt="photo of eric">
+                    <h1 class="display-4">Hi, I'm Eric.</span></h1>
+                    <p class="lead">I'm passionate about solving problems and creating beautiful, functional solutions. </p>
+                    <p class="lead">My tools are HTML, CSS and JavaScript.</p>
+                </div>
             </div>
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <div class="form-check">
-              <input name="option" class="form-check-input" type="radio">
-              <label>Question</label>
-            </div>
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <div class="form-check">
-              <input name="option" class="form-check-input" type="radio">
-              <label>Suggestion Or Comment</label>
-            </div>
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <div class="form-check">
-              <input name="option" class="form-check-input" type="radio">
-              <label>Other</label>
-            </div>
-          </div>
-          <div class="col-md-8 offset-md-2">
-            <div class="form-group">
-              <p>Send Us A Message</p>
-              <textarea class="text-area form-control" rows="8" cols="80" spellcheck="false"></textarea>
-            </div>
-          </div>
-          <div class="col-md-8 offset-md-2 button-div">
-            <button type="submit" class="submit-btn">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-6 footer-left">
-          <ul>
-            <li><a href="#home" alt = "home">Home</a></li>
-            <li><a href="#about" alt = "about">About</a></li>
-            <li><a href="#menu" alt = "menu">Menu</a></li>
-            <li><a href="#contact" alt = "contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-6 footer-right">
-          <ul>
-            <li>Find us on:</li>
-            <li><a href="https://www.facebook.com/" target="_blank" alt="facebook"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/" target="_blank" alt="twitter"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank" alt = "instagram"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-6 footer-left">
-          <p>Copyright &copy; 2018 Eric's Pizza Palace</p>
-        </div>
-        <div class="col-6 footer-right">
-          <p>Designed and coded by Eric O'Neill<br>
-          View my profile on GitHub <a href="#" target="_blank"><i class="fab fa-github"></i></a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+        <!--Navigation Bar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="nav">
+            <a class="navbar-brand" href="#home">eric<span class="name-color">oneill</span></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars" id="mobile-nav-button"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-link" href="#sf">Swipe Fright</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item nav-link" href="#pizza">Eric's Pizza Palace</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item nav-link" href="#film">FilmView</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item nav-link" href="#swim">Salem Swim Team</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item nav-link" href="#tune">TuneSeek</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" role="button">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link social-logo fab fa-linkedin fa-2x" id="nav-link-color" href="https://www.linkedin.com/in/eric-o-neill-7a01a516a/" target="_blank"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link social-logo fab fa-twitter-square fa-2x" id="nav-link-color" href="https://twitter.com/ericspad" target="_blank"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link social-logo fab fa-github-square fa-2x" id="nav-link-color" href="https://github.com/ericjoneill" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-  <script src="map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRE6bOReVfuJ_ebiBrTgESjGgTLQDLlMU&callback=initMap"
-    async defer></script>
+        <!--About Me Section-->
+        <div class="container anchor-padding" id="about">
+            <div class="row">
+                <div class="about">
+                    <h1 data-aos="fade-right" data-aos-duration="2000">About</h1>
+                    <p class="lead" data-aos="fade-up" data-aos-duration="2000">I'm <span class="name-color">Eric.</span> 
+                        I'm a Front-End Web Developer, living in the historical city of Philadelphia.</p>
+                    <p data-aos="fade-up" data-aos-duration="2000">I create 
+                            websites from scratch using front-end technologies, learning any language 
+                            needed in order to turn my vision for a website into reality. Featured in 
+                            my portfolio you will find some websites which I've completed or remain a 
+                            work in progress. You can find these projects in my portfolio found below. 
+                            Each day I work extensively with
+                            <span class="name-color">HTML5, CSS3,</span> and
+                            <span class="name-color">JavaScript</span>, and including js technologies like <span class="name-color">Node.js</span>
+                             and the <span class="name-color">React</span> framework.
+                            Feel free to contact me via my Linkedin, Github or Twitter.</p> 
+                </div>
+            </div>
+        </div>
 
-  <script src="jquery.js"></script>
-  <script src="script.js"></script>
+        <!--Projects Section-->
+        <div class="portfolio">
+            <h1 class="portfolio-header" data-aos="fade" data-aos-duration="1000" >Portfolio</h1>
+            <div class="container anchor-padding" id="sf">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <div class="card" >
+                            <a href="https://swipefright.netlify.com/"><img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="https://i.imgur.com/kMRYmhh.png?1" alt="photo of eric's swipe fright website, the best website ever"></a>
+                            <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
+                                <h5 class="card-title">Swipe Fright</h5>
+                                <p class="card-text">Swipe Fright is built with Javascript, SASS and Redux using the React framework along with a plethora of front end goodies like Swiper, wow.js and much more. Also built with an API provided by themovieDB.org which has been a pleasure to work with.</p>
+                                <a href="https://swipefright.netlify.com/" target="_blank" class="btn btn-success btn-name-color">View Demo</a>
+                                <a href="https://github.com/ericjoneill/spf" target="_blank" class="btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container anchor-padding" id="pizza">
+                <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="card">
+                                <a href="https://ericjoneill.github.io/erics-pizza-palace/"><img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="https://i.imgur.com/yyE9tdG.jpg?1" alt="photo of eric's pizza website"></a>
+                                <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
+                                    <h5 class="card-title">Eric's Pizza Palace</h5>
+                                    <p class="card-text">I always thought it would be nice to own my own pizza palace. Not due to aspirations of owning my own business or anything but purely because I love pizza! Here I made a beautiful, responsive website using various technologies while also taking advantage of the Google API.</p>
+                                    <a href="https://ericjoneill.github.io/erics-pizza-palace/" target="_blank" class="btn btn-success btn-name-color">View Demo</a>
+                                    <a href="https://github.com/ericjoneill/erics-pizza-palace" target="_blank" class="btn btn-secondary">GitHub</a>
 
-</body>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container anchor-padding" id="film">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="card" >
+                                <a href="https://ericjoneill.github.io/movie-search/"><img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="https://i.imgur.com/0eV6aVX.png" alt="photo of eric's movie website"></a>
+                                <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
+                                    <h5 class="card-title">FilmView</h5>
+                                    <p class="card-text">With this app I wanted to make something useful for those who wanted to quickly find information on a film they'd seen recently. I used React here with some Ajax, Axios, React Router and much more.</p>
+                                    <a href="https://ericjoneill.github.io/movie-search/" target="_blank" class="btn btn-success btn-name-color">View Demo</a>
+                                    <a href="https://github.com/ericjoneill/movie-search" target="_blank" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container anchor-padding" id="swim">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="card" >
+                                <a href="https://ericjoneill.github.io/swimming/"><img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="https://i.imgur.com/09u8Cth.png?1" alt="photo of eric's swim website"></a>
+                                <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
+                                    <h5 class="card-title">Salem Swim Team</h5>
+                                    <p class="card-text">I wanted to design a top-to-bottom services website which gives you everything you need in advertising, beyond what I designed in the pizza shop. I used a great deal of Bootstrap, Font Awesome and CSS here.</p>
+                                    <a href="https://ericjoneill.github.io/swimming/" target="_blank" class="btn btn-success btn-name-color">View Demo</a>
+                                    <a href="https://github.com/ericjoneill/swimming" target="_blank" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container anchor-padding" id="tune">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-8">
+                            <div class="card">
+                                <a href="https://ericjoneill.github.io/tuneseek/#/"><img class="card-img-top" data-aos="fade-right" data-aos-duration="2000" src="https://i.imgur.com/4JDf2gj.png?1" alt="photo of eric's music"></a>
+                                <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
+                                    <h5 class="card-title">TuneSeek</h5>
+                                    <p class="card-text">Similar to FilmView, I wanted to make a useful app that users would actually want to open and use for fun. TuneSeek features lots of open source resources like Bootstrap, Font Awesome, Material UI and of course, React.</p>
+                                    <a href="https://ericjoneill.github.io/tuneseek/#/" target="_blank" class="btn btn-success btn-name-color">View Demo</a>
+                                    <a href="https://github.com/ericjoneill/tuneseek" target="_blank" class="btn btn-secondary">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="container anchor-padding" id="contact">
+                <div class="row justify-content-center">
+                    <h1 class="col-sm-8 contact-header"><a id="mail-link" href="mailto:oneilljeric@gmail.com?subject=Portfolio Inquiry" style="text-decoration:none;">Get In Touch!</a></h1>
+                </div>
+            </div>
+
+        <footer>
+            <div class="footer-social">
+                <a class="social-logo fab fa-linkedin fa-2x" id="nav-link-color" href="https://www.linkedin.com/in/eric-o-neill-7a01a516a/" alt="Erics Linkedin" style="text-decoration:none;" target="_blank"></a>
+                <a class="social-logo fab fa-twitter-square fa-2x" id="nav-link-color" href="https://twitter.com/ericspad" alt="Erics Twitter" style="text-decoration:none;" target="_blank"></a>
+                <a class="social-logo fab fa-github-square fa-2x" id="nav-link-color" href="https://github.com/ericjoneill" alt="Erics Github" style="text-decoration:none;" target="_blank"></a>
+            </div>
+                <p>Design by Eric O'Neill &copy 2019</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>      
+        <script src="js/main.js"></script>
+    </body>
 </html>
